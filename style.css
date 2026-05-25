@@ -1,30 +1,34 @@
 a {
     text-decoration: none;
-    color: white;
+    color: black;
+    font-size: 22px;
 }
-.Effect:hover{
-    color:black ;
-    background-color:white ;
-    font-size: 30px;
+
+
+.b :hover{
+    background-color:white;
+    color: lightsalmon;
+    font-size: 38px;
 }
 body{
     background-color: bisque;
 }
 h1 {
-    color:white;
+    color:black;
     font-family: 'Courier New', Courier, monospace ;
     text-align: center;
     font-size: 38px;
-    text-shadow: 2px 3px 3px black;
+    text-shadow: 2px 3px 3px white;
 
 }
+
 
 
 #t_1{
     background-color: lightsalmon;
 }
 footer {
-margin-left: 150px;
+margin-left: 120px;
 margin-right: 150px;
 }
 p{
@@ -35,13 +39,16 @@ span{
     text-shadow: 1px 2px 2px brown;
     
 }
-input[type="reset"]:hover{
-    color: brown;
+input[type="reset"]{
+    color:white;
     font-size: 16px;
+    background-color: brown;
 }
-input[type="submit"]:hover{
-    color: brown;
+input[type="submit"]{
+    color:white;
     font-size: 16px;
+    background-color: brown;
+    
     
 }
 

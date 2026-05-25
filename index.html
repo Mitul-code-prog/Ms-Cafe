@@ -9,17 +9,17 @@
         <thead >
             <table border="0" cellspacing="0" cellpadding="0" width="100%" id="t_1">
                 <tr height="10" align="center">
-                    <td width="10%" id="Menu-bar">
-                        <a href="#Home">Home</a>
+                    <td width="10%" >
+                        <a href="#Home" class="Effect">Home</a>
                     </td>
                     <td width="10%">
-                        <a href="#About" id="Menu-bar">About</a>
+                        <a href="#About" class="Effect">About</a>
                     </td>
                     <td width="10%">
-                        <a href="#Menu" id="Menu-bar">Menu</a>
+                        <a href="#Menu" class="Effect">Menu</a>
                     </td>
                     <td width="10%">
-                        <a href="#Contact" id="Menu-bar">Contact</a>
+                        <a href="#Contact" class="Effect">Contact</a>
                     </td>
                     <td width="60%">
                          <h1> M's Café </h1>
@@ -52,13 +52,16 @@
                         <table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%">
                             <tr height="70" align="center">
                                 <td width="100%">
-                                    <h2>About M's Café</h2>
+                                    <h2>
+                                        <span> About M's Café </span>
+
+                                    </h2>
                                 </td>
 
                             </tr>
                             <tr height="50" align="center">
                                <td width="100%">
-                                 <p><font color="grey">Since 1990</font></p>
+                                 <p align="center"><font color="grey">Since 1990</font></p>
                                </td>
                             </tr>
                             <tr height="150" align="center">
@@ -90,7 +93,9 @@
                         <table border="0" cellspacing="0" cellpadding="0" width="100%">
                             <tr height="100" align="center">
                                 <td>
-                                    <h2>Menu</h2>
+                                    <h2>
+                                        <span>Menu</span>
+                                    </h2>
                                 </td>
                             </tr>
                             <tr height="100">
@@ -169,42 +174,72 @@
                       
         </tbody>
         <footer>
-            <div align="center" id="Contact">
-                <h2>Contact</h2>
+            <div id="Contact">
+                <h2 align="center">
+                    <span>Contact</span>
+                </h2>
                 <p>
-                    We take order for events,large-small
+                    We take order for events,large-small. Feel free to contact us.
                 
                 </p>
-                <p>
-                    Feel free to contact us.
-                </p>
-                <p>
+                
+                   
+                 <p>
                     You can contact us by phone 00 00000 00000 or email M'sCafé@M'sCafe.com,or by sending message here:
                 </p>
+                <hr>
                 <form method="get" action=""  autocomplete="on">
                     <p>
                         <label for="Name">Name:</label>
                         <input type="text" placeholder="Enter your name" name="name" required id="Name" autocomplete="name">
                     </p>
+                    <hr>
                     <p>
                         <label for="Email">Email:</label>
                         <input type="email" placeholder="Enter your email" name="email" required id="Email" autocomplete="email">
                     </p>
+                    <hr>
                     <p>
                         <label for="number">No of people:</label>
                         <input type="number" min="0" max="10" name="no of people" id="number">
+                    
                     </p>
+                    <hr>
+                    <p>
+                        <label for="Menu">What do we have for you?</label>
+                    </p>
+                    <P>
+                        <input type="checkbox" name="menu" id="Menu" value="M’s Signature Flat White">M’s Signature Flat White
+                    </P>
+
+                    <P>
+                        <input type="checkbox" name="menu" id="Menu" value="Schwarzwald Kirsch Croissant">Schwarzwald Kirsch Croissant
+                    </P>
+                    <P>
+                        <input type="checkbox" name="menu" id="Menu" value=" Avocado Bauernbrot"> Avocado Bauernbrot</P>
+                    <P>
+                        <input type="checkbox" name="menu" id="Menu" value="Café Melange mit Apfelstrudel">Café Melange mit Apfelstrudel
+                    </P>
+                    <P>
+                        <input type="checkbox" name="menu" id="Menu" value="Zimtschnecke Latte">Zimtschnecke Latte
+                    </P>
+                    <hr>
                     <p>
                         <label for="Datetime">Date&Time:</label>
                         <input type="datetime-local" name="date&time" id="Datetime">
                     </p>
+                    <hr>
                     <p>
                         <label for="Message">Message(optional):</label>
-                        <input type="text" placeholder="Enter Message" name="message" id="Message">
+                    
                     </p>
                     <p>
+                        <textarea name="messagebox" id="Message" placeholder="Enter Description" rows="5" cols="30" style="resize: none;"></textarea>
+                    </p>
+                    <hr>
+                    <p>
                         <label for="submit"></label>
-                        <input type="submit" value="send message" id="submit">
+                        <input type="submit" value="Send message" id="submit">
                         <input type="reset">
                     </p>
                 </form>

@@ -2,20 +2,46 @@ a {
     text-decoration: none;
     color: white;
 }
+.Effect:hover{
+    color:black ;
+    background-color:white ;
+    font-size: 30px;
+}
 body{
     background-color: bisque;
 }
 h1 {
     color:white;
-    font-family: 'Playfair Display serif' ;
+    font-family: 'Courier New', Courier, monospace ;
     text-align: center;
     font-size: 38px;
+    text-shadow: 2px 3px 3px black;
 
 }
-#Menu-bar{
-    color: white;
-    font-size: 25px;
-}
+
+
 #t_1{
     background-color: lightsalmon;
 }
+footer {
+margin-left: 150px;
+margin-right: 150px;
+}
+p{
+
+    line-height: 1.5;
+}
+span{
+    text-shadow: 1px 2px 2px brown;
+    
+}
+input[type="reset"]:hover{
+    color: brown;
+    font-size: 16px;
+}
+input[type="submit"]:hover{
+    color: brown;
+    font-size: 16px;
+    
+}
+

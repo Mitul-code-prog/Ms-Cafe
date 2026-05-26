@@ -29,8 +29,8 @@ a{
     background-color: white;
     color: lightsalmon;
 }
-ul :nth-child(4){
-    width: 70%;
+ul :nth-child(5){
+    width: 60%;
     align-items: center;
     justify-content: center;
     color: black;

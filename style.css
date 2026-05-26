@@ -106,4 +106,17 @@ input[type="submit"]{
     
     
 }
+@media (max-width:768px){
+    .container{
+        height: auto;
+        aspect-ratio: 16/9;
+        padding-left: 0;
+        align-items: flex-end;
+
+    }
+    .image{
+        width: 100%;
+        max-height: none;
+    }
+}
 

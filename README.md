@@ -9,4 +9,5 @@ First web project after learning HTML.
 
 ### **Built With**
 |**HTML5**| site structure using <table>,<form> for contact section
-|**CSS**| used basic font size, background color
+|**CSS**| used basic font size, background color, constantly upgrading the site using more CSS tools.
+

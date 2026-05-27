@@ -1,15 +1,16 @@
 *{
     box-sizing: border-box;
 }
-ul{
+ul {
     display: flex;
-    width: 98%;
+    width: 90%;
     margin: 2% auto;
     padding: 0px;
     align-items: stretch;
     list-style: none;
     background-color: lightsalmon;
     box-shadow: 2px 3px 3px white;
+    flex-wrap: wrap;
 }
 a{
     text-decoration: none;
@@ -22,6 +23,7 @@ a{
     font-size: 18px;
     display: flex;
     padding: 2px 0px;
+    flex-wrap: wrap;
    
 }
 .bar :hover{
@@ -41,6 +43,7 @@ ul :nth-child(5){
     text-shadow: 2px 1px 3px white;
     font-style: italic;
     letter-spacing: 6px;
+    flex-wrap: wrap;
 
 
 
@@ -49,42 +52,40 @@ ul :nth-child(5){
 body{
     background-color: bisque;
 }
+
 .container {
-    width: 98%;
+    max-width: 90%;
+    width: 100%;
     margin: 0px auto;
-    height: 100dvh;
+    min-height:100svh ;
     background-image: url(tea.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     
 }
     
 
 
 .image{
-    width:98%;
-    height: 100vh;
-    padding:160px 60px;
+    padding:16px 24px;
     justify-content: flex-start;
     font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
     text-shadow: 2px 3px 3px white;
-    letter-spacing: 7px;
+    letter-spacing: 2px;
+    display: flex;
+    flex-wrap: wrap;
     
 }
     
-
-
-
-
-
 footer {
-margin-left: 120px;
-margin-right: 150px;
+width: 90%;
+margin: 0px auto;
 }
 p{
 
@@ -106,17 +107,16 @@ input[type="submit"]{
     
     
 }
-@media (max-width:768px){
-    .container{
-        height: auto;
-        aspect-ratio: 16/9;
-        padding-left: 0;
-        align-items: flex-end;
 
-    }
+@media (max-width: 768px) {
+    .container{
+        min-height: 80svh;}
+
     .image{
-        width: 100%;
-        max-height: none;
+        padding: 60px 20px;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        text-align: center;
     }
 }
 

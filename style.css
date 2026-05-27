@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
 }
+html,body{
+    overflow-x: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
+}
 ul {
     display: flex;
     width: 90%;
@@ -27,7 +32,6 @@ a{
    
 }
 .bar :hover{
-    font-size: 26px;
     background-color: white;
     color: lightsalmon;
 }
@@ -42,7 +46,6 @@ ul :nth-child(5){
     padding: 2px 0px;
     text-shadow: 2px 1px 3px white;
     font-style: italic;
-    letter-spacing: 6px;
     flex-wrap: wrap;
 
 
@@ -57,20 +60,23 @@ body{
     max-width: 90%;
     width: 100%;
     margin: 0px auto;
-    min-height:100svh ;
+    aspect-ratio: 16/9;
     background-image: url(tea.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-start;
+    align-items: flex-end;
     flex-wrap: wrap;
-    
+    text-align: center;
+    display: flex;
+    padding: 20px;
+    font-size: 1.8rem;
 }
     
 
 
-.image{
+/* .image{
     padding:16px 24px;
     justify-content: flex-start;
     font-size: 2rem;
@@ -81,7 +87,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     
-}
+} */
     
 footer {
 width: 90%;
@@ -111,27 +117,27 @@ input[type="submit"]{
 @media (max-width: 768px) {
     ul{
         display: flex;
-        width:150svw;
+        width:100%;
         text-align: center;
-        flex-wrap: wrap;
-        font-size: 50%;
+        font-size: 20px;
         align-items: center;
         justify-content: center;
+        text-align: center;
+        
     }
     .container{
-        min-height: 60svh;
-        width:90%;
-        background-image: url(mobiletea.jpeg);
-        margin: 0px auto;
-        background-position: center;
-        background-size: cover;}
+        min-height: 200px;
+        aspect-ratio:auto;
+        align-items: flex-end;
+        justify-content: flex-start;
+        
+    }
+     
        
 
     .image{
-        padding: 60px 20px;
-        font-size: 1.3rem;
-        letter-spacing: 2px;
-        text-align: center;
+         font-size: 1.2rem;
+      
     }
 }
 

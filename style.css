@@ -109,8 +109,23 @@ input[type="submit"]{
 }
 
 @media (max-width: 768px) {
+    ul{
+        display: flex;
+        width:150svw;
+        text-align: center;
+        flex-wrap: wrap;
+        font-size: 50%;
+        align-items: center;
+        justify-content: center;
+    }
     .container{
-        min-height: 80svh;}
+        min-height: 60svh;
+        width:90%;
+        background-image: url(mobiletea.jpeg);
+        margin: 0px auto;
+        background-position: center;
+        background-size: cover;}
+       
 
     .image{
         padding: 60px 20px;

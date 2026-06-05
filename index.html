@@ -17,9 +17,9 @@
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Menu">Menu</a></li>
+                        <li><a href="#Contact">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -36,7 +36,7 @@
             <h2>M's Café</h2>
         </section>
     <!-- about section -->
-        <section class="about">
+        <section class="about"  id="About">
             <div class="about-img">
                 <img src="pizza.jpeg" alt="pizza" width="100%">
             </div>
@@ -47,7 +47,7 @@
                 <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis molestias, velit voluptates, libero aut, soluta rem nulla quae consectetur voluptatibus expedita in quo similique officiis odit modi aspernatur rerum eaque.</h5>
             </div>
         </section>
-        <section class="menuitem">
+        <section class="menuitem" id="Menu">
             <div class="menu-content">
                 <h2>Menu</h2>
                 <h3>1. M’s Signature Flat White</h3>
@@ -69,13 +69,13 @@
         </section>
     </main>
     <footer>
-        <div class="contact">
+        <div class="contact" id="Contact">
             <h2>Contact</h2>
             <p>We take order for events,large-small. Feel free to contact us.</br>You can contact us by phone 00 00000 00000 or email M'sCafé@M'sCafe.com,or by sending message here:</p>
             <form action="">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="text" placeholder="Message/Any Special Requirement">
+                <input type="text" placeholder="Name" name="Name" required>
+                <input type="email" placeholder="Email" name="Email">
+                <input type="text" placeholder="Message/Any Special Requirement" name="message">
                 <input type="submit" value="Send Message">
                 <input type="reset" value="Reset">
             </form>

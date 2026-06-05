@@ -1,249 +1,253 @@
 *{
     box-sizing: border-box;
-}
-html,body{
-    overflow-x: hidden;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-ul {
-    display: flex;
-    width: 100%;
-    padding: 0px;
-    align-items: stretch;
-    list-style: none;
-    background-color: lightsalmon;
-    box-shadow: 2px 3px 3px white;
-    flex-wrap: wrap;
+    padding:0;
+    margin: 0px;
 }
 a{
     text-decoration: none;
     color: black;
 }
-.bar{
-    width: 10%;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    display: flex;
-    padding: 2px 0px;
-    flex-wrap: wrap;
-   
+ul{
+    list-style-type: none;
 }
-.bar :hover{
+body,html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+.cover{
+    width: 100%;
     background-color: white;
-    color: lightsalmon;
-}
-ul :nth-child(5){
-    width: 60%;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    font-size: 38px;
-    display: flex;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 2px 0px;
-    text-shadow: 2px 1px 3px white;
-    font-style: italic;
-    flex-wrap: wrap;
-
-
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    z-index: 9999;
+    position: fixed;
+    top: 0;
 
 }
-
-body{
-    background-color: bisque;
-}
-
-.container {
+/* header */
+.container{
     width: 90%;
     margin: 0px auto;
-    aspect-ratio: 16/9;
-    background-image: url(tea.jpeg);
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+  
+}
+header .menu{
+    width: 50%;
+    display: flex;
+    padding: 8px 0;
+}
+header .menu ul{
+    display: flex;
+    align-content: center;
+    gap: 20px;
+}
+header .menu ul li a{
+    font-size: 15px;
+    letter-spacing: 5px;
+    padding:0 16px ;
+}
+header .menu ul li a:hover{
+    background-color: grey;
+}
+ header .logo{
+    width: 50%;
+}
+header .logo h2{
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 5px;
+    padding:0 16px ;
+    text-align: right;
+
+}
+/* main */
+/* backgroundimg section */
+ main .bgimg{
+    width: 100%;
+    display: flex;
+    background:url('tea.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    justify-content:flex-start;
+    height: 100vh;
+    justify-content:flex-start ;
     align-items: flex-end;
-    flex-wrap: wrap;
-    text-align: center;
-    display: flex;
-    padding: 20px;
-    font-size: 1.8rem;
-    border-radius: 50px;
 }
-    
+ main .bgimg h2{
+    font-size: 36px;
+    opacity: 0.8;
+    margin: 16px 16px;
+    letter-spacing: 5px;
 
 
-/* .image{
-    padding:16px 24px;
-    justify-content: flex-start;
-    font-size: 2rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
-    text-shadow: 2px 3px 3px white;
-    letter-spacing: 2px;
+ }
+ /* about section */
+ .about{
+    width: 80%;
+    margin: 64px auto;
     display: flex;
-    flex-wrap: wrap;
-    
-} */
-.about{
-    width: 90%;
-    margin: 0px auto;
-    display: flex;
-    min-height: 100svh;
-}
-.pizza{
-    width: 50%;
-    height: 100%;
-
-}
-.pizza img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 88px;
-}
-.desc{
-    
-    
-    padding: 60px;
-    width: 50%;
-    text-align: center;
-    
-    
-}
-/* menu */
-.menu{
-    display: flex;
-    align-items: center;
     gap: 30px;
-    width: 90%;
-    min-height: 100vh;
-    margin: 0px auto;
-    flex-wrap: wrap;
+    
+
+ }
+.about .about-img{
+    width: 50%;
     
 }
-.menu-item{
-    width: 48%;
-    height: 100%;
-    align-content: flex-start;
-}
-.menu-item img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 77px;
-    
-}
-.menu-item h2{
+ .about .about-content{
+    width: 50%;
     text-align: center;
+    line-height: 2.5;
     
-}
-.menu-item p{
-    line-height:2;
-    margin: 0px;
-}
-.menu-item h3{
-    line-height:3;
-    margin: 0px;
-}
+ }
+ .about .about-content h2{
+     font-size: 36px;
+     font-weight: 400;
+     margin: 16px 16px;
 
-footer {
-width: 90%;
-margin: 0px auto;
-}
-p{
 
-    line-height: 1.5;
+ }
+  .about .about-content h4{
+     font-size: 16px;
+     font-weight: normal;
+     margin: 16px 16px;
+     letter-spacing: 5px;
+     color: grey;
+  }
+.about .about-content p{
+     font-size: 16px;
+     font-weight: normal;
+     margin: 16px 16px;
+     text-align:justify
 }
-span{
-    text-shadow: 1px 2px 2px brown;
-    
-}
-input[type="text"]{
-    width: 100%;
-    height: 35px;
-    padding:8px;
-    border-radius: 8px;
-    border-top: none;
-}
-input[type="email"]{
-    width: 100%;
-    height: 35px;
-    padding:8px;
-    border-radius: 8px;
-    border-top: none;
-}
-input[type="number"]{
-    width: 100%;
-    height: 35px;
-    padding: 8px;
-    text-transform: capitalize;
-    border-radius: 8px;
-    border-top: none;
-}
-
-input[type="reset"]{
-    color:white;
+.about .about-content h5{
     font-size: 16px;
-    background-color: brown;
+     font-weight: normal;
+     margin: 16px 16px;
+     text-align:justify;
+     color: grey;  
 }
-input[type="submit"]{
-    color:white;
+.menuitem{
+    width: 80%;
+    margin: 64px auto;
+    display: flex;
+    gap: 30px;
+    
+
+ }
+  .menuitem .menu-content{
+    width: 50%;
+    text-align: center;
+    line-height: 2.5;
+    
+ }
+  .menuitem .menu-content h2{
+     font-size: 36px;
+     font-weight: 400;
+     margin: 16px 16px;
+
+
+ }
+   .menuitem .menu-content h3{
+     font-size: 18px;
+     text-align: left;
+
+
+ }
+  .menuitem .menu-content p{
+     font-size: 15px;
+     text-align: left;
+     color: grey;
+
+  }
+ .menuitem .menu-img{
+    width: 50%;
+     align-content: center;
+
+    
+}
+/* contacts */
+footer .contact{
+    width: 80%;
+    margin: 64px auto;
+     line-height: 2.5;
+}
+.contact  h2{
+     font-size: 36px;
+     font-weight: 400;
+     text-align: left;
+ }
+.contact  p{
+     font-size: 16px;
+     font-weight: 400;
+     text-align: left;
+ }
+ .contact form input{
+    width: 100%;
+    display: inline-block;
+    border: none;
+    border-bottom: 0.5px solid grey;
+    padding: 20px 8px;
+    margin: 16px auto;
+ }
+ .contact form input[type="submit"] {
+    width: auto;
+    padding: 10px;
+    border:none;
     font-size: 16px;
-    background-color: brown;
-    
-    
+    color:white;
+    background-color:black;
+ }
+  .contact form input[type="reset"] {
+    width: auto;
+    padding: 10px;
+    border:none;
+    font-size: 16px ;
+    color:white;
+    background-color:black;
 }
+ 
+
 
 @media (max-width: 768px) {
-    ul{
-        display: flex;
-        width:100%;
-        text-align: center;
-        font-size:5px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        
-        
+    header .menu ul li a{
+    padding: 0;
+    margin: 0;
+    letter-spacing: normal;
+    font-size: 12px;
     }
-    .bar{
-        font-size: 10px;
-    }
-    .container{
-        min-height: 200px;
-        aspect-ratio:auto;
-        align-items: flex-end;
-        justify-content: flex-start;
+    header .logo h2{
+    letter-spacing: normal;}
+
+    main .bgimg{
+    height: 28svh;
+    width:100%;
+    background-position: center center;
+    
+    } 
+     main .bgimg h2{
+        letter-spacing: normal;
+        font-size: 20px;
+     }
+  
         
-    }
     .about{
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: normal;
+        margin: 30px auto;
     }
-    .pizza{
-        
-        height: 70svh;
-        width: auto;
+    .menuitem{
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: normal;
+        margin: 30px auto;
     }
-    .desc{
-        width: 100%;
-        text-align:center;
-        
+    .contact{
+         margin: 30px auto;
     }
-       
 
-    .image{
-         font-size: 1rem;
-      
-    }
-    ul :nth-child(5) {
-        font-size: 15px;
-    }
-    .menu-item{
-        width: 100%;
-    }
+
+
+
 }
-

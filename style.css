@@ -88,7 +88,7 @@ header .logo h2{
     margin: 64px auto;
     display: flex;
     gap: 30px;
-     scroll-margin-top: 80px;
+     scroll-margin-top: 80p
     
 
  }
@@ -213,6 +213,9 @@ footer .contact{
 
 
 @media (max-width: 768px) {
+    .container{
+        padding: 8px 0px;
+    }
     header .menu ul li a{
     padding: 0;
     margin: 0;

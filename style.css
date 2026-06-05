@@ -30,12 +30,14 @@ body,html{
     display: flex;
     align-items: center;
     padding: 8px 16px;
+    position: relative;
   
 }
 header .menu{
     width: 50%;
     display: flex;
     padding: 8px 0;
+    position: relative;
 }
 header .menu ul{
     display: flex;
@@ -88,7 +90,7 @@ header .logo h2{
     margin: 64px auto;
     display: flex;
     gap: 30px;
-     scroll-margin-top: 80p
+    scroll-margin-top: 80px;
     
 
  }

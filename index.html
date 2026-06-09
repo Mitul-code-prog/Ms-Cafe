@@ -72,13 +72,29 @@
         <div class="contact" id="Contact">
             <h2>Contact</h2>
             <p>We take order for events,large-small. Feel free to contact us.</br>You can contact us by phone 00 00000 00000 or email M'sCafé@M'sCafe.com,or by sending message here:</p>
-            <form action="">
-                <input type="text" placeholder="Name" name="Name" required>
-                <input type="email" placeholder="Email" name="Email">
+            <form action="" id="contactform">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="email" placeholder="Email" name="email">
                 <input type="text" placeholder="Message/Any Special Requirement" name="message">
                 <input type="submit" value="Send Message">
                 <input type="reset" value="Reset">
             </form>
+            <script>
+            document.getElementById('contactform').addEventListener('submit', async e => {
+                e.preventDefault();
+                const formData = new FormData(e.target);
+                const data = Object.fromEntries(formData);
+            
+                await fetch('https://script.google.com/macros/s/AKfycbwa0nge8MVnYure4GWPUWXR-MLThu5DEqrWogoUXN1b1Hbdsvxk03p4YIsccwB1gldtQQ/exec', {
+                    method: 'POST',
+                    body: JSON.stringify(data)
+                 });
+            
+                alert('Sent! Check your sheet.');
+                e.target.reset();
+            });
+
+            </script>
         </div>
     </footer>
 

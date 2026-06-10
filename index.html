@@ -74,7 +74,7 @@
             <p>We take order for events,large-small. Feel free to contact us.</br>You can contact us by phone 00 00000 00000 or email M'sCafé@M'sCafe.com,or by sending message here:</p>
             <form action="" id="contactform">
                 <input type="text" placeholder="Name" name="name" required>
-                <input type="email" placeholder="Email" name="email">
+                <input type="email" placeholder="Email" name="email" required>
                 <input type="text" placeholder="Message/Any Special Requirement" name="message">
                 <input type="submit" value="Send Message">
                 <input type="reset" value="Reset">
@@ -90,7 +90,7 @@
                     body: JSON.stringify(data)
                  });
             
-                alert('Sent! Check your sheet.');
+                alert('Message Sent! Thank you.');
                 e.target.reset();
             });
 
